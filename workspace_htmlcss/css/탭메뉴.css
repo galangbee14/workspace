@@ -1,0 +1,60 @@
+body{
+  background-color: rgb(219, 218, 218);
+}
+.container{
+  width: 700px;
+  margin: 50px auto;
+}
+
+.tab-btn{
+  display: flex;
+  gap: 2px;
+}
+
+.tab-btn a{
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-top: 2px solid black;
+}
+
+.tab-content{
+  position: relative;
+}
+.tab-item{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  /* display: none 공간 없어짐
+     visibility: hidden 공간은 있는데 안보임 */
+  background-color: white;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.tab-item:target{
+  opacity: 1;
+  /* opacity를 주면 드래그 안되는 문제 있음 */
+  visibility: visible;
+}
+
+.tab-btn a:hover{
+  color: lime;
+}
+
+a.show{
+  background-color: white;
+  color: black;
+  border-top: 2px solid black;
+}
+
+/* 
+a.show :a태그 중 show 클래스
+a .show :자손
+a > .show :자식 
+*/

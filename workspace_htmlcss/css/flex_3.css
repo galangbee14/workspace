@@ -1,0 +1,44 @@
+.table{
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.header{
+  display: flex;
+  height: 25%;
+}
+.header > :nth-child(1){
+  flex-basis: 60%;
+  background-color: #CAF4FF;
+}
+.header > :nth-child(2){
+  flex-basis: 40%;
+  background-color: #A0DEFF;
+}
+
+.main{
+  display: flex;
+  height: 50%;
+}
+.main > :nth-child(1){
+  flex-basis: 20%;
+  background-color: #FFF9D0;
+}
+.main > :nth-child(2){
+  flex-basis: 80%;
+  background-color: #5AB2FF;
+}
+
+.footer{
+  display: flex;
+  height: 25%;
+}
+.footer > :nth-child(1){
+  flex-basis: 60%;
+  background-color: #A0DEFF;
+}
+.footer > :nth-child(2){
+  flex-basis: 40%;
+  background-color: #CAF4FF;

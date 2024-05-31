@@ -1,0 +1,50 @@
+.container{
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+
+  /* ************ */
+  display: flex;
+  /* ************ */
+}
+/* display: flex는 한 줄 개행 됨
+display: inline-flex는 옆에 나옴 */
+
+.container > div{
+  /* width: 100px;
+  height: 100px; */
+  border: 1px solid red;
+}
+
+.flex1{
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+/* 기본값이 row */
+/* 주축을 row로 설정하면 주축은 안의 내용 만큼, 교차축은 부모 크기와 같게 설정됨*/
+
+.flex2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+/* 주축을 column로 설정하면 주축은 안의 내용 만큼, 교차축은 부모 크기와 같게 설정됨*/
+
+/* .flex1 > div:nth-child(2){
+  align-self: flex-start;
+} */
+
+.flex1 > div:nth-child(1){
+  flex-basis: 50%;
+}
+.flex1 > div:nth-child(2){
+  flex-basis: 30%;
+}
+.flex1 > div:nth-child(3){
+  flex-basis: 10%;
+}
+.flex1 > div:nth-child(4){
+  flex-basis: 10%;
+}
