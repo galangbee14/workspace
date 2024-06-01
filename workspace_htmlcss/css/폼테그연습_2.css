@@ -1,0 +1,32 @@
+td{
+  padding: 4px;
+}
+.sky{
+  background-color: rgb(212, 228, 235);
+}
+.cen{
+  text-align: center;
+  margin-top: 10px;
+}
+.cent{
+  text-align: center;
+}
+.aaa{
+  font-weight: bold;
+}
+.red{
+  color: red;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.wid{
+  width: 100px;
+}
+.widt{
+  width: 80px;
+}
+
+/* table 태그 안에 tbody 안 만들어도 자동으로 생기는 경우 있음 */
+table > tbody > tr > td:first-child{
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.table{
+  width: 100vw;
+  text-align: center;
+}
+
+.header{
+  height: 100px;
+  width: 100%;
+  background-color: #C1F2B0;
+  line-height: 100px;
+}
+
+.content{
+  display: flex;
+  line-height: 250px;
+}
+
+.content > div:nth-child(1){
+ flex-direction: row;
+ /* justify-content: center;
+ align-items: stretch; */
+ flex-basis: 20%;
+ height: 250px;
+ background-color: #FBF6EE;
+}
+.content > div:nth-child(2){
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: stretch; */
+  flex-basis: 80%;
+  height: 250px;
+  background-color: #FFB534;
+ }
+
+.footer{
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  background-color: #65B741;
+}
