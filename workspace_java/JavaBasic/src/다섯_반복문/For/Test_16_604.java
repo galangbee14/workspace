@@ -3,6 +3,8 @@ package 다섯_반복문.For;
 //임의의 정수를 입력받아 1부터 입력받은 수까지 중 짝수의 개수를 구하여라.
 //for문을 사용하여 풀어보아라.
 
+//오답! 정답 확인하기
+
 import java.util.Scanner;
 
 public class Test_16_604 {
