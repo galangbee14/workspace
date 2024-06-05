@@ -21,6 +21,7 @@ public class 문자열비교_603 {
         String addr = "울산";
         if (addr.equals("울산")){
 
+            System.out.println(addr);
         }
     }
 }

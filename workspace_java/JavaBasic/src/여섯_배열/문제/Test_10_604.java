@@ -1,5 +1,6 @@
 package 여섯_배열.문제;
 
+import java.io.OutputStream;
 import java.util.Scanner;
 
 // 정수를 5개 저장할 수 있는 배열을 만들고, scanner를 통해 입력받은 값을 하나씩 배열의 요소에 저장해보자.
@@ -11,22 +12,28 @@ public class Test_10_604 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("입력 : ");
 
+       // int num1 = sc.nextInt(); - 오답
 
-       // int num1 = sc.nextInt();
-
+        //배열의 크기만큼 반복해서 입력값을 배열의 각 요소에 저장
         for (int i = 0; i < arr1.length; i++) {
+            System.out.println(i + "번째 요소 입력 : ");
             arr1[i] = sc.nextInt();
         }
 
-//        for (int i = 0; i < arr1.length; i++) {
-//            arr1[i] = num1;
-//        }
+//        for (int i = 0; i < arr1.length; i++) { - 오답
+//            arr1[i] = num1; - 오답
+//        } - 오답
 
+        System.out.println("-배열에 저장된 요소-");
         for(int b = 0; b < arr1.length; b++){
-            System.out.println(arr1[b]);}
+            System.out.print(arr1[b] + " ");}
 
+        System.out.println();
+        System.out.println("-for-each로 변경-");
+        for(int e : arr1){
+            System.out.print(e + " ");
+        }
     }
 
 }
