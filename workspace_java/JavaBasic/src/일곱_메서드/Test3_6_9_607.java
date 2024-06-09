@@ -20,11 +20,11 @@ public class Test3_6_9_607 {
         //8.
 
         //9.
-        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] result = test3_9(a);
+        //int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        //int[] result = test3_9(a);
 
         //배열 내용 출력
-        System.out.println(Arrays.toString(result));
+        //System.out.println(Arrays.toString(result));
     }
 
     //9. 정수형 배열 하나를 매개변수로 받아

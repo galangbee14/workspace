@@ -19,7 +19,7 @@ public class 메서드_5_607 {
         return a + b;
     }
 
-    //매개변수로 전달된 두 정수의 합을 리턴하는 메서드
+    //매개변수로 전달된 두 정수의 합을 실수형태로 리턴하는 메서드
     public static double getSum2(int c, int d){
         return c + (double)d;
     }
