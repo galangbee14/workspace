@@ -9,7 +9,7 @@ package class_basic;
                        //초기화하지 않으면 기본값으로 자동 초기화
 
 //Monitor class : 실 생활에 존재하는 모니터를 코드로 구현하기 위한 설계도
-public class Monitor_607 {
+public class Monitor_607_n {
     //변수 - 브랜드, 가격, 색상
     String brand; // null
     int price; // 0
