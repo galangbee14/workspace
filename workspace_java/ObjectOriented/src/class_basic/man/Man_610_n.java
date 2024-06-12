@@ -41,7 +41,7 @@ public class Man_610_n {
     }
 
 
-    //getter : 맴법변수 각각의 값을 "return" 받는 메서드
+    //getter : 맴버변수 각각의 값을 "return" 받는 메서드
     //getter의 이름은 get변수명으로 반드시 지정!
     //리턴하는 메서드 통상적으로 get~
     //각 멤버의 값을 리턴하는 메소드를 3개 만드세요.
