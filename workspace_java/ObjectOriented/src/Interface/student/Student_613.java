@@ -1,12 +1,12 @@
 package Interface.student;
 
-public class Strudent_613 {
+public class Student_613 {
     private String name;
     private int korScore;
     private int mathScore;
     private int engScore;
 
-    public Strudent_613(String name, int korScore, int mathScore, int engScore) {
+    public Student_613(String name, int korScore, int mathScore, int engScore) {
         this.name = name;
         this.korScore = korScore;
         this.mathScore = mathScore;

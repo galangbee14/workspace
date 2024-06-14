@@ -1,5 +1,6 @@
 package Interface;
 
+//(Interface > implements)
 //인터페이스는 메서드의 이름만 존재.
 //맴버변수 X, 생성자 X
 //생성자가 없기 때문에 인터페이스는 객체 생성 불가

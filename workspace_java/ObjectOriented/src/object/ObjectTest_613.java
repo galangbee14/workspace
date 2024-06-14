@@ -2,6 +2,7 @@ package object;
 
 public class ObjectTest_613 {
     public static void main(String[] args) {
+        //(Object > equals, toString)
 
         //equals() : 매개변수로 들어온 데이터와 현재 데이터가 같은지 판단
 //        Object obj = new Object();
@@ -15,7 +16,7 @@ public class ObjectTest_613 {
 
         System.out.println(p1.equals(p2));
 
-        //toString() : 데이터를 문자열로 표현
+        //toString() : 데이터를 문자열로 표현 //오버라이딩을 꼭 해줘야 됨!!
         //출력문에 객체명만 넣으면 자동으로 객체의 toString() 메서드가 호출
         System.out.println(p1.toString());
         System.out.println(p1);
