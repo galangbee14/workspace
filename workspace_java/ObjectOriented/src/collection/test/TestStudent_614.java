@@ -25,8 +25,36 @@ public class TestStudent_614 {
         for(Student_614 student : list1){
             System.out.println(student.toString());
         }
+        System.out.println();
         //2) 총점이 150점 이상인 학생의 모든 정보를 출력하세요.
+
+        for(int i = 0; i < list1.size(); i++) {
+            if (list1.get(i).getTotalScore() >= 150) {
+                System.out.println(list1.get(i));
+            }
+        }
+
+        System.out.println();
         //3) 모든 학생에 대한 평균 점수를 출력하세요.
+
+        int sum = 0;
+        int result = 0;
+        for(int i = 0; i < list1.size(); i++) {
+            sum += list1.get(i).getTotalScore();
+        }
+       result =  sum / (list1.size()*2);
+        System.out.println("평균점수 : " + result);
+
+        System.out.println();
         //4) 총점이 1등인 학생의 모든 정보를 출력해보세요.
+        Student_614 first = list1.get(1);
+        int max = 0;
+        for(int i = 0; i < list1.size(); i++) {
+            if(max < list1.get(i).getTotalScore()){
+                max = list1.get(i).getTotalScore();
+                first = list1.get(i);
+            }
+        }
+        System.out.println(first);
     }
 }

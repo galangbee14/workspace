@@ -15,9 +15,6 @@ public class Student_614 {
         this.name = name;
         this.koScore = koScore;
         this.engScore = engScore;
-    }
-
-    public Student_614(int koScore, int engScore){
         this.totalScore = koScore + engScore;
     }
 
