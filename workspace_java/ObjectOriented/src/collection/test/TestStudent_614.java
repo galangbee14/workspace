@@ -38,11 +38,11 @@ public class TestStudent_614 {
         //3) 모든 학생에 대한 평균 점수를 출력하세요.
 
         int sum = 0;
-        int result = 0;
+        double result = 0;
         for(int i = 0; i < list1.size(); i++) {
             sum += list1.get(i).getTotalScore();
         }
-       result =  sum / (list1.size()*2);
+       result =  (double)sum / (list1.size()*2);
         System.out.println("평균점수 : " + result);
 
         System.out.println();
@@ -56,5 +56,16 @@ public class TestStudent_614 {
             }
         }
         System.out.println(first);
+
+        //풀이
+//        int index = 0; //총점이 1등인 학생의 index
+//        int maxi = 0; // 가장 높은 총점
+//        for(int i= 0; i < list1.size(); i++){
+//            if(maxi < list1.get(i).getTotalScore()){
+//                maxi = list1.get(i).getTotalScore();
+//                index = i;
+//            }
+//        }
+//        System.out.println(list1.get(index));
     }
 }
