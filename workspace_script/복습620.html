@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="text" id="what">
+  <input type="button" value="첫번째" onclick="first()">
+  <input type="button" value="두번째" onclick="second()">
+
+  <br>
+  <br>
+  <input type="button" value="c1" onclick="getout()">
+  <div>프론트앤드</div>
+  <input type="text" id="front">
+  <br>
+  <br>
+  <input type="button" value="c2" onclick="getin()">
+  <div>백앤드</div>
+  <input type="text" id="back">
+
+  <br>
+  <br>
+  popup
+  <input type="button" value="easy" id="molla" onclick="dothis()">
+  <br>
+  <br>
+  <input type="text" id="input">
+  <input type="button" value="click" id="some" onclick="here()">
+
+  
+  <script>
+    function here(){
+      const where = document.querySelector('#input');
+      console.log(where.value);
+    }
+
+    function dothis(){
+      alert('짜잔-!');
+    }
+
+    function getout(){
+     const out = document.querySelector('#front');
+     out.value = 999;
+    } 
+    function getin(){
+      const gogo = document.querySelector('#back');
+      console.log(gogo.type);
+      console.log(gogo.id);
+      alert(gogo.value);
+    }
+
+
+    function first(){
+      const tab = document.querySelector('#what');
+      console.log(tab.type);
+      console.log(tab.id);
+      alert(tab.value);
+    }
+
+    function second(){
+      const name = document.querySelector('#what');
+      name.value = 3600;
+    }
+
+    console.log('복습합시다.');
+    console.log(200);
+
+    const a = 333;
+    console.log(a);
+
+    let b = 66;
+    console.log(b);
+
+    const num = 100;
+
+    if(num < 1000){
+      console.log('얍');
+    }
+
+    for(let i = 0; i<3; i++){
+      console.log(i);
+    }
+
+    const arr = [];
+    arr.push(3);
+    arr.push(999);
+    arr.push('자료형 상관없음')
+
+    console.log(arr[0]);
+    console.log(arr[1]);
+    
+    for(let i=0; i<arr.length; i++){
+      console.log(arr[i]);
+    }
+
+
+
+  </script>
+</body>
+</html>
