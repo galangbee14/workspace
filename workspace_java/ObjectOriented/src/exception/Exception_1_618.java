@@ -35,5 +35,3 @@ public class Exception_1_618 {
         System.out.println("프로그램 종료");
     }
 }
-//(예외가 발생하면 예외발생 즉시 프로그램 종료)
-//(try 구문에서 예외가 발생하면 예외발생 즉시 catch문 실행)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>학생 성적 입력 프로그램</h1>
+  <p> [[${scoreVO.name}]] 학생의 기본 정보를 입력합니다.</p>
+  <!-- 매개변수에서첫글자만소문자이름.VO클래스 맴버변수와 일치(input속성과 같은 것) -->
+  <form action="/third" method="post">
+
+    <input type="hidden" name="name" th:value="${scoreVO.name}">
+    학년 <input type="text" name="year"> <br>
+    <!-- input 입력값 자동으로 value값으로 저장됨 -->
+    연락처
+    <select name="tel">
+      <option value="010">010</option>
+      <option value="011">011</option>
+    </select>
+    <!-- select는 form태그 아니라도 정보 넘어옴 -->
+    <input type="text" name="tel"> <br>
+    성별
+    <input type="radio" name="gender" value="남자"> 남
+    <input type="radio" name="gender" value="여자"> 여<br>
+    <input type="submit" value="확인">
+    <input type="button" value="뒤로가기">
+
+  </form>
+</body>
+</html>
+
+<!-- form 태그 안에 있는 input 태그 내용의 value 값 전달 / name값 꼭 있어야됨!! -->
+
+<!--/* [[${scoreVO.name}]] */-->
+<!-- 타임리프 주석 -->

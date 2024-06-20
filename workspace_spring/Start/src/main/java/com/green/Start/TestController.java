@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 //이 클래스는 페이지(html) 이동을 담당 -> Controller
-//@ : 어노테이션
+//@ : 어노테이션(Anotation)
 @Controller //해당 클래스가 관제탑 역할을 하는 Controller 임을 인지시켜 줌.
 public class TestController {
 
@@ -24,7 +24,7 @@ public class TestController {
 
     @GetMapping("/t3")
     public String goTest3(){
-        System.out.println("goTest3 메서드 실행~");
+        System.out.println("goTest3 메서드 실행");
         return "test3";
     }
 }
