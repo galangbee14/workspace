@@ -83,7 +83,6 @@ public class StudentController {
         //학생 정보 수정
         studentService.updateStu(studentVO);
 
-        //3번
 
         return "redirect:/stuDetail?stuNum=" + studentVO.getStuNum();
     }
