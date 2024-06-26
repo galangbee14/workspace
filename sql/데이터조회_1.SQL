@@ -13,7 +13,7 @@ SELECT EMPNO, ENAME, SAL FROM emp;
 -- EMP 테이블의 모든 정보를 조회하는 쿼리문    
 SELECT * FROM emp;
 
--- 별칭사용(컴럼명을 조회할 때 임의로 변경)
+-- 별칭사용(컬럼명을 조회할 때 임의로 변경)
 SELECT EMPNO AS 사번 FROM emp;
 SELECT EMPNO AS 사번, ENAME 사원명
 FROM emp;

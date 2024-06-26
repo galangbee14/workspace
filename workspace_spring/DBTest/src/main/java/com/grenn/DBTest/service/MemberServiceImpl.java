@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 //implements v.구현하다
 //TEST_MEMBER 테이블에 데이터를 조작하는 DB 작업을 하는 클래스
+
+//Service도 자동으로 객체 만들어주는데, 괄호안의 이름으로 변경해서 만들 수 있다.
+//MemberServiceImpl memberService = new MemberServiceImpl();
 @Service("memberService")
 public class MemberServiceImpl implements MemberService {
     //SqlSessionTemplate 객체 : 쿼리 실행을 위한 메서드를 가지고 있는 객체

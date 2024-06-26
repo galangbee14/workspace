@@ -5,6 +5,9 @@ import jakarta.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+//Controller 자동으로 객체 만들어줌
+//                 앞글자만 소문자
+//MemberController memberController = new MemberController();
 @Controller
 public class MemberController {
     @Resource(name = "memberService")
