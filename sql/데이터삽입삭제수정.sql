@@ -7,6 +7,7 @@ CREATE TABLE TEST_MEMBER(
 );
 
 SELECT * FROM test_member;
+ROLLBACK;
 
 -- 데이터베이스는 데이터가 잘못되는 것을 엄격히 금지하기 때문에
 -- 데이터의 변화가 생기는 경우 해당 변화가 잘못이 없는지 한번 확인할 기회를 줌
@@ -27,7 +28,7 @@ VALUES (11, 'KIM','울산', 26);
 -- 컬럼명은 반드시 모든 컬럼이 작성될 필요는 없다.
 -- 작성되지 않은 컬럼에는 기본적으로 NULL이 들어간다.
 INSERT INTO test_member (MEM_NUM, MEM_NAME) 
-VALUES (12, '홍');
+VALUES (15, '홍');
 
 -- 아래 쿼리는 MEM_NUM에 NULL이 들어가는데
 -- MEM_NUM은 기본키(PRIMARY KEY)라 NULL값이 들어갈 수 없어 오류 발생!
@@ -65,3 +66,6 @@ ROLLBACK;
 -- 40살 이하인 회원을 모두 삭제
 DELETE from test_member
 WHERE MEM_AGE <= 40;
+
+DELETE FROM test_member
+WHERE MEM_NUM = 13;
