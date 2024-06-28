@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>학번</td>
+            <td>학생명</td>
+            <td>국어점수</td>
+            <td>영어점수</td>
+            <td>총점</td>
+        </tr>
+        <th:block th:if="${#lists.isEmpty(stuList)}">
+            <tr>
+                <td colspan="5">조회된 학생이 없습니다.</td>
+            </tr>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(stuList)}">
+            <tr th:each="stu : ${stuList}">
+                <td>[[${stu.stuNum}]]</td>
+                <td><a th:href="@{/stuDetail(stuNum=${stu.stuNum})}">[[${stu.stuName}]]</a></td>
+                <td>[[${stu.korScore}]]</td>
+                <td>[[${stu.engScore}]]</td>
+                <td>[[${stu.korScore + stu.engScore}]]</td>
+            </tr>
+        </th:block>
+    </table>
+
+    <input type="button" value="학생등록" onclick="goReg()">
+
+    <script>
+      //학생등록 버튼 클릭 시 학생등록 페이지로 이동하는 함수
+      function goReg(){
+        location.href = '/regForm';
+      }
+    </script>
+
+</body>
+</html>

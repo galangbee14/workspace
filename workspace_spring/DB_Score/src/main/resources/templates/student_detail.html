@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  학번 : [[${student.stuNum}]]<br>
+  이름 : [[${student.stuName}]]<br>
+  국어점수 : [[${student.korScore}]]<br>
+  영어점수 : [[${student.engScore}]]<br>
+  소개 : [[${student.intro}]]<br>
+
+  <input type="button" value="뒤로가기" onclick="goBack()">
+  <input type="button" value="학생삭제" th:onclick="goDelete([[${student.stuNum}]])">
+  <input type="button" value="학생수정" th:onclick="goUpdate([[${student.stuNum}]])">
+
+  <script>
+    function goBack(){
+      location.href = "/";
+    }
+
+    function goDelete(stuNum){
+      const result = confirm('정말 지우려고?');
+
+      if(result){
+        location.href = `/stuDelete?stuNum=${stuNum}`;
+      }
+    }
+
+    function goUpdate(stuNum){
+      location.href=`/updateForm?stuNum=${stuNum}`;
+    }
+
+  </script>
+</body>
+</html>
