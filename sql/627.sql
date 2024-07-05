@@ -22,3 +22,20 @@ SELECT STU_NUM, STU_NAME, KOR_SCORE, ENG_SCORE
 FROM SCORE_INFO;
 
 
+INSERT INTO score_info (STU_NUM, STU_NAME, KOR_SCORE, ENG_SCORE, INTRO)
+VALUES (3, '홍길동', 80, 90, '반가워요');
+
+SELECT STU_NUM
+            , STU_NAME
+            , KOR_SCORE
+            , ENG_SCORE
+            , INTRO
+        FROM SCORE_INFO
+        WHERE STU_NUM = 6;
+        
+-- DELETE FROM 테이블명 [WHERE 조건];
+DELETE FROM score_info;
+
+DELETE FROM score_info
+WHERE STU_NUM = 4;
+ROLLBACK;

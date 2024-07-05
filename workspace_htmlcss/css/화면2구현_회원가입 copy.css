@@ -19,6 +19,11 @@ table > tbody > tr > td:first-child{
   padding-left: 20px;
 }
 
+.input{
+  font-size: 12px;
+  text-align: right;
+}
+
 .color-red{
   color: red;
 }

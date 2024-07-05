@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="button" value="행추가" onclick="addRow()">
+  <input type="button" value="제목줄을 제외한 모든 행 삭제" onclick="addRow()">
+
+  <table border="1" style="width: 500px;">
+    <tbody>
+      <tr>
+        <td>이름</td>
+        <td>나이</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    ////////////////////////////////////
+    //3번 문제
+    function addRow(){
+      //1. 추가할 태그를 문자열로 생성
+      const str = `
+      <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      `;
+
+      //2. 위에서 만든 태그를 추가할 태그를 먼저 선택
+      const tbodyTag = document.querySelector('table > tbody');
+
+      //3. 태그 추가
+      //첫번째 매개변수 : 태그를 추가할 위치
+      //두번째 매개변수 : 추가할 태그
+      tbodyTag.insertAdjacentHTML('beforeend', str);
+    }
+
+       //afterbegin : 태그가 시작한 다음
+       //afterend : 태그가 끝난 다음
+       //beforebegin : 태그가 시작되기 전
+       //beforeend : 태그가 끝나기 전
+       //////////////////////////////////
+  </script>
+</body>
+</html>
